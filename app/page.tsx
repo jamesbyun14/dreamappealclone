@@ -8,7 +8,9 @@ export default function Home() {
   const [loading, setLoading] = useState(0);
   useEffect(() => {
     setUrl(Math.floor(Math.random() * 7) + 1);
-    setLoading(1);
+    setTimeout(() => {
+      setLoading(1);
+    }, 1000);
   }, []);
   return (
     <div>
